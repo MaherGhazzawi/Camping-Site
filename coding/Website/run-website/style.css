@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel';
+    outline: none;
+}
+h2{
+    font-size: 2rem;
+    font-weight:200;
+    margin: 10px;
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 10px;
+}
+button{
+    margin: 10px;
+    background: transparent;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: 1px solid rgb(211, 211, 211);
+    text-transform: uppercase;
+}
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#img1{
+    max-width: 100%;
+}
+.right-header{
+    align-items: center;
+    margin: auto 0;
+    padding: 10px;
+}
+.section1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.section1-right img{
+    width: 100%;
+}
+.section1-left{
+    margin: auto 10px;
+}
+.section2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.section2-right{
+    margin: auto 10px;
+}
+.section2-left img{
+    width: 100%;
+    max-height: 100%;
+}
+.section_contact{
+    text-align: center;
+    position: relative;
+    padding: 60px 0;
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 224px;
+    grid-template-areas: 
+    "input1 input2"
+    "textarea textarea";
+    width: 85%;
+    margin: 30px auto;
+}
+label{
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+input[type="text"],textarea{
+    width: 100%;
+    margin: 20px 0 40px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: 0.2s;
+}
+input[type="text"]:focus,
+textarea:focus{
+border: 2px solid skyblue;
+}
+textarea{
+    resize: none;
+    height: 180px;
+}
+.input1{
+    grid-area: input1;
+    margin:10px;
+}
+.input2{
+    grid-area: input2;
+    margin: 10px;
+}
+.textarea{
+    grid-area: textarea;
+}
+form button{
+    width: 30%;
+    margin: 10px 70%;
+    transform: translateX(50%);
+}
+.section_contact::after{
+    content: "";
+    position: absolute;
+    border: 1px solid silver;
+    width: 80%;
+    height: 1px;
+    background-color: silver;
+    left: 10%;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0 45%;
+}
+ul li{
+    padding: 20px;
+}
+
+
